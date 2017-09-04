@@ -8,6 +8,7 @@ $("document").ready(function(){
   method:"POST",
   data:{id1:id1,id2:id2},
   cache:false,
+  dataType:"json",
   beforeSend:function(){
     $("#ClickedID").val("Please wait...");
   },
