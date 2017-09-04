@@ -1,3 +1,3 @@
 # ajaxlogin
 Login using ajax
-## use jquery cdn or download latest jquery before using this code
+## use jquery cdn min or download latest jquery min before using this code
