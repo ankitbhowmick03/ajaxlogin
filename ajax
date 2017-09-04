@@ -1,0 +1,24 @@
+$("document").ready(function(){
+  $("#ClickedID").click(function(){
+  //var id1=$("#id1").val();
+  //var id2=$("#id2").val();
+  //validate for empty fields
+  $.ajax({
+  url:"filename.php",
+  method:"POST",
+  data:{id1:id1,id2:id2},
+  cache:false,
+  beforeSend:function(){
+    $("#ClickedID").val("Please wait...");
+  },
+  success:function(data){
+    if(data){
+    //do whatever you want
+    }
+  },
+  error:function(){
+  alert('custom error');
+  }
+  });
+  });
+});
