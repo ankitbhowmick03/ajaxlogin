@@ -13,8 +13,11 @@ $("document").ready(function(){
     $("#ClickedID").val("Please wait...");
   },
   success:function(data){
-    if(data){
+    if(data.foo=='bar'){
     //do whatever you want
+    }
+    else{
+    alert(data.error);
     }
   },
   error:function(){
